@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myFirstApp">
+<html ng-app="NameCalculator">
 <head>
   <meta charset="utf-8"/>
   <script src="angular.min.js"></script>
@@ -8,9 +8,10 @@
 
 </head>
     <body>
-      <div ng-controller="myFirstContoller">
-<h1> hello world! Angular js </h1>
+      <div ng-controller="NameCalculatorController">
+        <input type="text" ng-model ="name" ng-keyup ="DisplayTotalValue();">
+      <h3>total value of name is : {{totalValue}}</h3>
       </div>
 
     </body>
-</html
+</html>
